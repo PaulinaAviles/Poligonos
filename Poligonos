@@ -1,0 +1,23 @@
+Figura Pau;
+Figura Gar;
+Figura Trois;
+
+ 
+void setup(){
+  size(400,400);
+  background(255);
+  
+  Pau = new Poligono(50,100,3,10,'r');
+  Gar = new Poligono (100,100,4,10,'a');
+  Trois = new Poligono(250,100,5,10,'l');
+}
+
+void draw(){
+  Pau.display();
+  Gar.display();
+  Trois.display();
+  
+  println("Pau","area=" + Pau.area(),"perimetro=" + Pau.perimetro(), "lado=" + Pau.lado(), "radio=" + Pau.radio(),"apotema=" + Pau.aphotem());
+  println("Gar","area=" + Gar.area(),"perimetro=" + Gar.perimetro(), "lado=" + Gar.lado(), "radio=" + Gar.radio(),"apotema=" + Gar.aphotem());
+  println("Trois","area=" + Trois.area(),"perimetro=" + Trois.perimetro(), "lado=" + Trois.lado(), "radio=" + Trois.radio(),"apotema=" + Trois.aphotem());
+}
